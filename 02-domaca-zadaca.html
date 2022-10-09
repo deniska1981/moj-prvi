@@ -9,11 +9,11 @@
   <body style="background-color: rgb(216, 163, 212)">
     <h1>Prijavite se u našu grupu</h1>
     <form action="#" method="get">
-      <label for="ime">Ime:</label>
+      <label for="ime">Ime*:</label>
       <br />
       <input type="text" name="ime" id="ime" value="Ivo" required="" />
       <br />
-      <lable for="prezime">Prezime:</lable>
+      <lable for="prezime">Prezime*:</lable>
       <br />
       <input
         type="text"
@@ -22,15 +22,34 @@
         value="Ivić"
         required=""
       /><br />
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required="" /><br />
-      <label for="zaporka">Zaporka:</label><br />
+      <label for="username">Korisničko ime:</label><br />
+      <input
+        type="text"
+        id="korisnicko-ime"
+        name="korisnicko-ime"
+        required
+      /><br />
+      <label for="email">Email*:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="telephone">Broj telefona</label><br />
+      <input
+        type="tel"
+        id="telefon"
+        name="telefon"
+        placeholder="000-000-0000"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+      <br />
+      <label for="zaporka">Zaporka*:</label><br />
+      <input type="password" id="zaporka" name="zaporka" required /><br />
+      <label for="ponovoljena-zaporka">Ponovite zaporku*:</label><br />
       <input
         type="password"
-        id="zaporka"
-        name="zaporka"
-        required=""
-      /><br /><br />
+        id="ponovoljena-zaporka"
+        name="ponovoljena-zaporka"
+        required
+      />
+      <br /><br />
       <lable for="spol">Spol:</lable><br />
       <input type="radio" id="zensko" name="spol" value="zensko" />
       <label for="zensko">Žensko</label>
@@ -78,7 +97,6 @@
         name="nesto"
         id="nesto"
         value="Upiši svoj hobi"
-        required=""
       /><br /><br />
       <label for="najboja">Izaberite vašu omiljenu boju:</label>
       <input type="color" id="najboja" name="najboja" value="#2dd3d1" />
