@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Druga domaća zadaća</title>
+  </head>
+  <body style="background-color: rgb(216, 163, 212)">
+    <h1>Prijavite se u našu grupu</h1>
+    <form action="#" method="get">
+      <label for="ime">Ime:</label>
+      <br />
+      <input type="text" name="ime" id="ime" value="Ivo" required="" />
+      <br />
+      <lable for="prezime">Prezime:</lable>
+      <br />
+      <input
+        type="text"
+        name="prezime"
+        id="prezime"
+        value="Ivić"
+        required=""
+      /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required="" /><br />
+      <label for="zaporka">Zaporka:</label><br />
+      <input
+        type="password"
+        id="zaporka"
+        name="zaporka"
+        required=""
+      /><br /><br />
+      <lable for="spol">Spol:</lable><br />
+      <input type="radio" id="zensko" name="spol" value="zensko" />
+      <label for="zensko">Žensko</label>
+      <br />
+      <input type="radio" id="musko" name="musko" value="musko" />
+      <label for="musko">Muško</label>
+      <br /><br />
+      <label for="datum-rodenja">Datum rođenja:</label>
+      <input type="date" id="datum-rodenja" name="datum-rodenja" />
+      <br /><br />
+      <label for="mojaslika">Izaberite sliku za vaš avatar:</label><br />
+      <input type="file" id="mojaslika" name="mojaslika" accept="image/*" />
+      <br /><br />
+      <lable for="checkbox">Hobiji:</lable><br />
+      <input type="checkbox" id="pisanje" name="pisanje" value="pisanje" />
+      <label for="pisanje">Pisanje</label>
+      <br />
+      <input type="checkbox" id="trcanje" name="trcanje" value="trcanje" />
+      <label for="trcanje">Trčanje</label>
+      <br />
+      <input type="checkbox" id="plivanje" name="plivanje" value="plivanje" />
+      <label for="plivanje">Plivanje</label>
+      <br />
+      <input type="checkbox" id="kuhanje" name="kuhanje" value="kuhanje" />
+      <label for="kuhanje">Kuhanje</label>
+      <br />
+      <input
+        type="checkbox"
+        id="vrtlarenje"
+        name="vrtlarenje"
+        value="vrtlarenje"
+      />
+      <label for="vrtlarenje">Vrtlarenje</label>
+      <br />
+      <input
+        type="checkbox"
+        id="borilacke-vjestine"
+        name="borilacke-vjestine"
+        value="borilacke-vjestine"
+      />
+      <label for="borilacke-vjestine">Borilačke vještine</label>
+      <br />
+      <input
+        type="text"
+        name="nesto"
+        id="nesto"
+        value="Upiši svoj hobi"
+        required=""
+      /><br /><br />
+      <label for="najboja">Izaberite vašu omiljenu boju:</label>
+      <input type="color" id="najboja" name="najboja" value="#2dd3d1" />
+      <br /><br />
+      <label for="vrijeme">Kakvo vrijeme najviše volite?</label><br />
+      <select id="vrijeme" name="vrijeme">
+        <option value="suncano">Sunčano</option>
+        <option value="kisovito">Kišovito</option>
+        <option value="oblacno">Oblačno</option>
+        <option value="vjetrovito">Vjetrovito</option>
+        <option value="maglovito">Maglovito</option>
+      </select>
+      <br /><br />
+      <label for="aktivnost">Koliko često se aktivni na Facebooku?</label><br />
+      <input list="aktivnost" name="aktivnost" />
+      <datalist id="aktivnost">
+        <option value="svaki dan"></option>
+        <option value="tri puta tjedno i više"></option>
+        <option value="dva puta tjedno"></option>
+        <option value="jednom tjedno"></option>
+        <option value="nekoliko puta mjesečno"></option>
+      </datalist>
+      <br /><br />
+      <label for="grupa">Koliko ćete biti aktivni u grupi?</label><br />
+      <input
+        type="range"
+        id="grupa"
+        name="grupa"
+        min="1 put tjedno"
+        max="svaki dan"
+      /><br />
+      <lable for="komentar">Imate li dodatnih komentara</lable><br />
+      <textarea name="komentar" rows="5" cols="30">
+Unesite vaš komentar...</textarea
+      ><br /><br />
+      <input
+        type="button"
+        onclick="alert('Poslat ćete svoje podatke!')"
+        value="Registrirajte se"
+      />
+      <input type="reset" onclick="alert('Uneseni podaci će se obrisati!')" />
+    </form>
+  </body>
+</html>
