@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predavanje 4</title>
+  </head>
+  <body>
+    <!--Forme - nastavak-->
+    <form action="# metkod" method="get" oninput="bonus.value=parseInt(placa.value)*0.2>
+      <label for="post">Unesite sadržaj svpg posta:</label>
+    </form>
+    <br />
+    <textarea name="post" rows="10" cols="200">
+        Upišite svoj post</textarea
+    >
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </fieldset>
+    <fieldset>
+      <legend>Glasačke preferencije:</legend>
+      <label for="fname">Tko će biti predsjednik:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Tko će biti predsjednik vlade:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </fieldset>
+    <br />
+    <lable for="polaznici">Odaberite polaznika</lable>
+    <input list="polaznici" name="polaznik" />
+    <datalist id="polaznici">
+      <option value="Mišćević Explorer"></option>
+      <option value="Blazic"></option>
+      <option value="Lezovich"></option>
+      <option value="Kukulj"></option>
+      <option value="Validžić"></option>
+    </datalist>
+    <br><br>
+    <lable for="placa">Odaberite iznos godišnje plaće</lable>
+  <input id="placa" name="placa" type="range" min="1000000" max="1000000" value="500000"><br>
+  </body>
+</html>
