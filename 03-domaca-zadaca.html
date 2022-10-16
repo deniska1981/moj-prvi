@@ -6,66 +6,70 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Treća domaća zadaća</title>
   </head>
-  <body style="background-color:rgb(32, 235, 150);">
+  <body style="background-color: rgb(32, 235, 150)">
     <h1>Recite nam što biste željeli</h1>
-    <form action="/action_page.php"
-    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-    <fieldset>
-      <legend>Kućni ljubimci</legend>
-      <lable for="ljubimac"
-        >Koje mitsko biće biste imali za kućnog ljubimca?</lable
-      ><br>
-      <input type="checkbox" id="zmaj" name="zmaj" value="zmaj" />
-      <label for="zmaj"> Zmaja</label><br />
-      <input type="checkbox" id="kentaur" name="kentaur" value="kentaur" />
-      <label for="vehicle2"> Kentaur</label><br />
-      <input type="checkbox" id="jednorog" name="jednorog" value="jednorog" />
-      <label for="jednorog"> Jednorog</label><br />
-      <input type="checkbox" id="yeti" name="yeti" value="yeti" />
-      <label for="yeti"> Yeti</label>
+    <form
+      action="/action_page.php"
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+    >
+      <fieldset>
+        <legend>Kućni ljubimci</legend>
+        <lable for="ljubimac"
+          >Koje mitsko biće biste imali za kućnog ljubimca?</lable
+        ><br />
+        <input type="checkbox" id="zmaj" name="zmaj" value="zmaj" />
+        <label for="zmaj"> Zmaja</label><br />
+        <input type="checkbox" id="kentaur" name="kentaur" value="kentaur" />
+        <label for="vehicle2"> Kentaur</label><br />
+        <input type="checkbox" id="jednorog" name="jednorog" value="jednorog" />
+        <label for="jednorog"> Jednorog</label><br />
+        <input type="checkbox" id="yeti" name="yeti" value="yeti" />
+        <label for="yeti"> Yeti</label>
+        <br />
+        <br />
+        <label for="fname">Kako biste ga nazvali? </label><br />
+        <input type="text" id="fname" name="fname" value="Drakon" /><br />
+        <br />
+        <label for="izgled">Koje veličine bi bio?</label><br />
+        <input type="radio" id="mali" name="velicina" value="mali" />
+        <label for="mali">Mali</label><br />
+        <input type="radio" id="srednji" name="velicina" value="srednji" />
+        <label for="srednji">Srednji</label><br />
+        <input type="radio" id="veliki" name="velicina" value="veliki" />
+        <label for="veliki">Veliki</label><br />
+        <input type="radio" id="ogroman" name="velicina" value="ogroman" />
+        <label for="ogroman">Ogroman</label><br />
+      </fieldset>
       <br />
-      <br />
-      <label for="fname">Kako biste ga nazvali? </label><br />
-      <input type="text" id="fname" name="fname" value="Drakon" /><br />
-      <br />
-      <label for="izgled">Koje veličine bi bio?</label><br />
-      <input type="radio" id="mali" name="velicina" value="mali" />
-      <label for="mali">Mali</label><br />
-      <input type="radio" id="srednji" name="velicina" value="srednji" />
-      <label for="srednji">Srednji</label><br />
-      <input type="radio" id="veliki" name="velicina" value="veliki" />
-      <label for="veliki">Veliki</label><br />
-      <input type="radio" id="ogroman" name="velicina" value="ogroman" />
-      <label for="ogroman">Ogroman</label><br />
-    </fieldset>
-    <br />
-    <fieldset>
-      <legend>Želje</legend>
-      <label for="more">Čega biste željeli imati više?</label><br />
-    <input list="more" name="more" />
-    <datalist id="more">
-      <option value="Slobodnog remena"></option>
-      <option value="Znanja"></option>
-      <option value="Novaca"></option>
-      <option value="Sreće"></option>
-    </datalist>
-    <br />
- <br>
- <lable for="koliko">Koliko više?</lable>
- <br>
- 0
- <input type="range"  id="a" name="a" value="100">
- 100 +
- <input type="number" id="b" name="b" value="100">
- =
- <output name="x" for="a b"></output>
-  <br>
- <br>
-      <label for="post">Što bi vas učinilo sretnim?:</label><br />
-      <textarea id="post" name="post" rows="12" cols="40">
+      <fieldset>
+        <legend>Želje</legend>
+        <label for="more">Čega biste željeli imati više?</label><br />
+        <input list="more" name="more" />
+        <datalist id="more">
+          <option value="Slobodnog remena"></option>
+          <option value="Znanja"></option>
+          <option value="Novaca"></option>
+          <option value="Sreće"></option>
+        </datalist>
+        <br />
+        <br />
+        <lable for="koliko">Koliko više?</lable>
+        <br />
+        0
+        <input type="range" id="a" name="a" value="100" />
+        100 +
+        <input type="number" id="b" name="b" value="100" />
+        =
+        <output name="x" for="a b"></output>
+        <br />
+        <br />
+        <label for="post">Što bi vas učinilo sretnim?:</label><br />
+        <textarea id="post" name="post" rows="12" cols="40">
   Usrećilo bi me...</textarea
-      ><br>
-      <input type="submit" value="Pošalji">
+        ><br />
+      </fieldset>
+      <br />
+      <input type="submit" value="Pošalji" />
     </form>
   </body>
 </html>
