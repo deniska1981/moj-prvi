@@ -1,0 +1,57 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    color: ghostwhite;
+}
+
+body{
+    background-image: url(../multimedia/5559852.jpg)
+  }
+
+
+a, p, label{
+   font-size: 18px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.veliki{
+    border-style: solid;
+    border-radius: 20px;
+}
+
+
+#o-nama, #sekcija-kontakt, a[href$="nama"]  {
+    display: inline-block;
+    background-color: rgb(203, 90, 94);  
+}
+
+[class~=naslov]{
+    color: rgb(250, 242, 5);
+    padding-left: 10px;
+}
+
+[id*="cija-op"]{
+    background-color: rgba(29, 20, 26, 0.4);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+[type="Submit"]{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding: 10px;
+    background-color:red;
+    border-radius: 10px;
+}
+
+p.mali{
+    color:black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
