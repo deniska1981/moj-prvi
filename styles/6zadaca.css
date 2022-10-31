@@ -89,7 +89,7 @@ table, th, td {
   }
 
   div > img:last-of-type{
-    width: 600px;
+    width: 400px;
     border:red;
     border-style: groove;
     border-radius: 20px;
