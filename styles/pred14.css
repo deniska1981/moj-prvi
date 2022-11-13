@@ -95,7 +95,6 @@
   }
   .treci > div:nth-of-type(3){
     background-color: darkgrey;
-    display: inline-block;
     width:40%;
     height:140px;
     margin:10px;
