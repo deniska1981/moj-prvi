@@ -1,0 +1,96 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+div {
+  height: 100%;
+  position: relative;
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  align-self: center;
+}
+
+.prvi {
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  height: 66vh;
+  gap: 10px;
+  justify-items: space-around;
+}
+
+.velika-slika {
+  flex: 2;
+}
+
+.text-slika {
+  flex: 1;
+}
+
+.text {
+  flex: 1;
+}
+
+.text-slika {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.short {
+  width: 7.7rem;
+  height: 5rem;
+  text-align: right;
+  background-color: aquamarine;
+}
+
+.drugi {
+  display: flex;
+  flex-flow: column wrap;
+  width: 75%;
+  height: 12rem;
+  gap: 5px;
+  align-content: space-between;
+}
+
+article {
+  display: flex;
+  height: 12rem;
+  width: 20%;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.long:first-of-type {
+  width: 7.7rem;
+  height: 12rem;
+}
+
+.long:nth-of-type(2) {
+  width: 7.7rem;
+  height: 10rem;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-item {
+    flex-basis: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flex-item {
+    flex-basis: 32%;
+  }
+}

@@ -1,0 +1,18 @@
+div{
+    @include animBoxCommon();
+}
+
+div:nth-child(1): {
+    rgba(map-get($colors, 1),0.4);
+@include animate (1);
+}
+
+div:nth-child(2): {
+rgba(map-get($colors, 1),0.4);
+@include animate (4);
+}
+
+div:nth-child(3): {
+rgba(map-get($colors, 1),0.4);
+@include animate (7);
+}
